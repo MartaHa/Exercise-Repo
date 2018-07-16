@@ -6,6 +6,8 @@ import pl.marta.exercise.enumExercise.EyesColor;
 import pl.marta.exercise.enumExercise.HairColor;
 import pl.marta.exercise.enumExercise.Human;
 import pl.marta.exercise.enumExercise2.Computation;
+import pl.marta.exercise.observer.Netflix;
+import pl.marta.exercise.observer.NetflixUser;
 
 @SpringBootApplication
 public class ExerciseApplication {
@@ -22,6 +24,14 @@ public class ExerciseApplication {
         System.out.println("3 - 4 = " + Computation.SUBSTRACT.perform(3, 4));
         System.out.println("3 * 4 = " + Computation.MULTIPLY.perform(3, 4));
         System.out.println("3 / 4 = " + Computation.DIVIDE.perform(3, 4));
+
+
+
+        Netflix netflix = new Netflix();
+        NetflixUser userJohn = new NetflixUser("John");
+        netflix.register(userJohn);
+        netflix.addNewFilm();
+
 }
 }
 
