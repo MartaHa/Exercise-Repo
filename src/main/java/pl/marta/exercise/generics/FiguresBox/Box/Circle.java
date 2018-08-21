@@ -1,4 +1,4 @@
-package pl.marta.exercise.generics.FiguresBox;
+package pl.marta.exercise.generics.FiguresBox.Box;
 
 public class Circle implements Figure {
 
